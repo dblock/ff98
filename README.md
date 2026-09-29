@@ -77,3 +77,9 @@ The toolchain and build scripts are the same as for [inet98](https://github.com/
 * The Delphi VCL's `BrowseDr` and `OleCtnrs` units aren't in the LCL. They're replaced by small versions in [ported/compat/](ported/compat/):
   * `TBrowseDirectoryDlg` wraps the LCL's `TSelectDirectoryDialog`.
   * Wine has no Word to embed, so `TOleContainer` draws the document's text on a white page, with the text from `docdll.dll`.
+
+## License
+
+File & Folder 98, its port and scripts are released under the [MIT License](LICENSE). The exception is `REGSTR.PAS` in [ported/common.d32/](ported/common.d32/), a Delphi Runtime Library unit that is © 1996 Borland International.
+
+The 1998 help file and About box still carry the original shareware terms and Vestris Inc. notices. They're kept as historical text, and the MIT License replaces them. Trademarks belong to their respective owners.
