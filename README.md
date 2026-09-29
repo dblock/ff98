@@ -4,6 +4,16 @@ File & Folder 98 is a 1998 Windows document manager for Word documents. It was w
 
 Instead of Explorer's tree of drives and folders, File & Folder shows **virtual volumes**. Each volume is a name, such as `UNIGE`, that points to a folder on any drive. The folders inside a volume are listed together with the Word documents they hold, and `.doc` extensions are hidden. A button bar down the left side has commands for the current folder and document.
 
+## Why
+
+File & Folder was written for a small business in Geneva with about 20 workstations. Its network supervisor spent too much time finding and fixing documents that staff had saved in the wrong places. The [1999 Vestris product page](history/filefold.html) describes it as software "for a small business which is sick and tired of seeing it's workers putting documents a bit everywhere in the system."
+
+File & Folder limits users to a fixed set of roots. Under a root, anyone can create folders and put documents in them. A folder holds either documents or other folders, never both. Users create, open, copy, move and rename Word documents from File & Folder, without the Word file dialogs. The page estimates the time saved at over 80%.
+
+The first version, File & Folder 1.0 and 1.2, ran on Windows 3.11 and needed the Visual Basic 4.0 runtime. It sold as shareware for US$75. File & Folder 98 is a new version of the same idea, rewritten in Delphi 3. It adds virtual volumes, previews and a text extractor that doesn't need Word. This build's About box reads "Licensed to Katzarov S.A.".
+
+![File & Folder 1.0](history/ff10-main.png) ![File & Folder 1.0 Setup](history/ff10-setup.png)
+
 ## What It Does
 
 * **Virtual volumes.** In **Setup**, you give a volume a name and pick its root folder. Volumes are stored in the registry under `HKCU\Software\Stolen Technologies Inc.\File & Folder 98\Volumes`.
@@ -19,6 +29,7 @@ Instead of Explorer's tree of drives and folders, File & Folder shows **virtual 
 ## Layout
 
 * [original/](original/) is the 1998 Delphi 3 source, unchanged. It also holds the 1998 build of `folder.exe`, `docdll.dll` and its source, the help file and its source in `help/`, and the InstallShield setup in `install/`.
+* [history/](history/) holds the 1999 Vestris product page and two screenshots of File & Folder 1.0 from it.
 * [ported/](ported/) is the same program, ported to build with Free Pascal and Lazarus (LCL).
   * `src/` holds the application: `folder.lpr`, the `.pas` units and text `.lfm` forms.
   * `compat/` holds small replacements for Delphi units that the LCL doesn't have.
