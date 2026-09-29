@@ -4,9 +4,13 @@ File & Folder 98 is a 1998 Windows document manager for Word documents. It was w
 
 Instead of Explorer's tree of drives and folders, File & Folder shows **virtual volumes**. Each volume is a name, such as `UNIGE`, that points to a folder on any drive. The folders inside a volume are listed together with the Word documents they hold, and `.doc` extensions are hidden. A button bar down the left side has commands for the current folder and document.
 
+![File & Folder 98 running under Wine on macOS](ff98.gif)
+
+The demo opens a folder and selects a document. It then shows the document's properties, its text preview and its page preview, and the About box. A full-resolution version is in [ff98.mp4](ff98.mp4).
+
 ## Why
 
-File & Folder was written for a small business in Geneva with about 20 workstations. Its network supervisor spent too much time finding and fixing documents that staff had saved in the wrong places. The [1999 Vestris product page](history/filefold.html) describes it as software "for a small business which is sick and tired of seeing it's workers putting documents a bit everywhere in the system."
+File & Folder was written for a small business in Geneva with about 20 workstations. In 1998 many office workers were new to computers, and folders were a hard idea to grasp. Drives, directories and Word's file dialogs made little sense to them, so they saved documents wherever Word happened to put them. The network supervisor spent too much time finding and fixing misplaced documents. The [1999 Vestris product page](history/filefold.html) describes it as software "for a small business which is sick and tired of seeing it's workers putting documents a bit everywhere in the system."
 
 File & Folder limits users to a fixed set of roots. Under a root, anyone can create folders and put documents in them. A folder holds either documents or other folders, never both. Users create, open, copy, move and rename Word documents from File & Folder, without the Word file dialogs. The page estimates the time saved at over 80%.
 
@@ -36,6 +40,7 @@ The first version, File & Folder 1.0 and 1.2, ran on Windows 3.11 and needed the
   * `common.d32/` holds shared helper units, the same as in [inet98](https://github.com/dblock/inet98).
   * `bin/` holds the release build, `folder.exe`, plus `docdll.dll` and the help files it loads.
 * [scripts/](scripts/) holds the scripts that install the toolchain, build and run the port on macOS.
+  * `demo/` holds the scripts that recorded the demo above.
 
 ## Building and Running
 
@@ -52,6 +57,17 @@ A release build is committed in [ported/bin/](ported/bin/). To run it without bu
 Pass `--debug` to both `build.sh` and `run.sh` to build and run `folder-debug.exe`. It is a console build with line info that prints exceptions and their stack traces to the terminal. Set `FF98_TOOLS` to install the toolchain somewhere else. If [inet98](https://github.com/dblock/inet98) is already set up, `ln -s ~/.cache/inet98 ~/.cache/ff98` reuses its toolchain.
 
 On the first run, File & Folder shows a welcome message and opens **Setup**. Add a volume that points to a folder with some `.doc` files, then press **Save**.
+
+## Recording the Demo
+
+[scripts/demo/](scripts/demo/) recorded the demo above on macOS. It needs `brew install ffmpeg cliclick gifsicle`, and Screen Recording and Accessibility permissions for the terminal. It expects the `UNIGE` volume to have a `Telematique` folder with `tp4.router.doc` in it.
+
+```bash
+scripts/demo/record.sh     # records /tmp/ff98demo/rec.mov (~60 s, hands off)
+scripts/demo/encode.sh     # writes ff98.mp4 and ff98.gif
+```
+
+`record.sh` starts File & Folder 98 and records only the area of its main window. It uses `cliclick` to click through the app. Wine sometimes ignores the first click after a window becomes active, so the script clicks again until the expected window opens or closes.
 
 ## Why the Original Doesn't Run
 
