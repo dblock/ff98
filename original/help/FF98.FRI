@@ -1,0 +1,488 @@
+üVQHLPEDFILE_4.00.017_007ü
+
+[PF]
+-1
+[EPF]
+[DICTIONARY]
+AF - Append Project FILES Section
+AL - Project ALIAS Section
+AM - Append Project MAP Section
+AN - Annotations
+BI - Browse info
+AV - Audio/Video Project Options
+BX - Build Expression Index
+BM - Bookmarks
+BM3 - New Bookmarks
+BN - Browse group names
+BR - Bitmap root
+BE - Build Expression
+BP - Build Tag Pointer Strings
+BT - Build Tags
+CH - Character set
+CI - Citation
+CM - Context map
+CN - Context number
+CNI - Context Number Index
+CP - Compress
+CR - Copyright
+CS - Context string
+CSI - Context String Index
+CV - Compiler version
+CW - Compiler Switch(s)
+DH - Defined help styles
+D2 - Defined help styles - ver 2.00
+D3 - Defined help styles - Ver 3.00
+FM - Font markers
+FT - Font table
+F2 - Font markers - ver 2.00
+HA - Help author
+HC - Help compiler dir
+HF - Help files
+HX - Help comments
+HT - Help topic section
+HTV - HTML options - HTML version
+HTM - HTML options - server version
+HTP - HTML options - export path
+HTI - HTML options - index filename
+HTH - HTML options - headers
+HTH2 - HTML options - headers, multiple style version
+HTW - HTML options - web browser
+HTO - HTML options - web browser options
+HTF - HTML options - font translations
+HTS - HTML options - default URL
+HTA - HTML options - alternate HTML
+HTD - HTML options - default HTML
+HTN - HTML options - nonscrolling region
+HTG - HTML options - image path on server
+HTK - HTML options - add keywords
+HTR - HTML options - footer text
+HTRX - HTML options - footer flag
+HTE - HTML options - header text
+HTEX - HTML options - header flag
+HTC - HTML options - background color
+HTCX - HTML options - background color flag
+HTIM - HTML options - background image
+HTH - HTML Form Header
+HTCT - HTML options - text color
+HCTX - HTML options - text color flag
+HTCL - HTML options - link color
+HTCLX - HTML options - link color flag
+HTCV - HTML options - visited link color
+HTCVX - HTML options - visited link color flag
+HTCA - HTML options - activated link color
+HTCAX - HTML options - activated link color flag
+HTHLP - HTML options - HTML Help flag
+HTHLPS - HTML options - HTML Help startup file
+HTHLPC - HTML options - HTML Help contents file
+HTHLPI - HTML options - HTML Help index file
+HTHLPN - HTML options - HTML Help navigator file
+HV - Help Magician Version
+IC - Icon FileName
+IN - Index
+JM - Jump markers
+J2 - Jump markers - ver 2.00
+J3 - Jump markers - ver 3.00
+KW - Keywords
+KW3 - Keywords
+KW4 - Keywords
+KWA - A Keywords
+LH - Last HTML Write
+LN - Language
+LT - Links Tags
+MD - Macro definitions
+MD4 - Macro definitions - ver 4.00
+MM - Multimedia markers
+MK - Multiple keywords
+MK4 - Multiple keywords
+MI - Macro info
+MT - Mid Topic Context Strings
+NS - WYSIWYG Nonscrolling Regions
+NT - NTags
+N2 - NTags - ver 2.00
+N3 - NTags - ver 3.00
+OK - Old key phrase
+OP - Optimize for  CDROM
+PF - Project Flag
+PG - Paragraph Tags
+PJ - Project macro
+PK - Primary Key
+PKI - Primary Key Index
+PM - Popup markers
+P2 - Popup markers - ver 2.00
+P3 - Popup markers - ver 3.00
+PR - Paragraph markers
+PT - Page title
+RC - RTF Compatibility
+SK - Style Hot Keys
+TI - Title
+TLI - Title Index
+TM - Topic macro
+TP - Template
+TX - Help Text
+UB - Use Build Expression
+UI - Unique File ID
+UR - URL Addresses
+WA - Warning
+WD - Window definitions
+WD3 - Window definitions
+WD4 - Window definitions
+WM - Write map file
+WP - Word Processor
+WS - Windows specification source
+VH - Version History
+[END OF DICTIONARY]
+
+[NS]
+-1
+[ENS]
+
+[BT]
+[EBT]
+
+[BE]
+
+
+
+
+
+
+
+
+
+
+[EBE]
+
+[UB]
+True
+[EUB]
+
+[BX]
+ 1
+[EBX]
+
+[HA]
+[EHA]
+
+[HX]
+[EHX]
+
+[AF]
+[EAF]
+
+[AM]
+[EAM]
+
+[BM3]
+0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;
+[EBM3]
+
+[CV]
+4
+[ECV]
+
+[OPT]
+[CH]
+0
+[ECH]
+
+[CP]
+0
+[ECP]
+
+[HV]
+400017
+[EHV]
+
+[IN3]
+0
+[EIN3]
+
+[LH]
+0
+[ELH]
+
+[LN]
+0
+[ELN]
+
+[OK]
+0
+[EOK]
+
+[OP]
+0
+[EOP]
+
+[PJ]
+0
+[EPJ]
+
+[RC]
+2
+[ERC]
+
+[UI]
+20090837
+[EUI]
+
+[HTV]
+0
+[EHTV]
+
+[HTM]
+0
+[EHTM]
+
+[HTP]
+T:\32BIT\PROG\HMPRO95\HTML
+[EHTP]
+
+[HTI]
+index.htm
+[EHTI]
+
+[HTH2]
+;;;;;;;;;;;;;;;;;
+[EHTH2]
+
+[HTW]
+[EHTW]
+
+[HTO]
+[EHTO]
+
+[HTF]
+0;8;10;12;14;20;26;36;
+[EHTF]
+
+[HTS]
+[EHTS]
+
+[HTA]
+[EHTA]
+
+[HTD]
+[EHTD]
+
+[HTN]
+-1
+[EHTN]
+
+[HTG]
+[EHTG]
+
+[HTK]
+0
+[EHTK]
+
+[HTR]
+[EHTR]
+
+[HTRX]
+0
+[EHTRX]
+
+[HTE]
+[EHTE]
+
+[HTEX]
+0
+[EHTEX]
+
+[HTCX]
+0
+[EHTCX]
+
+[HTC]
+12632256
+[EHTC]
+
+[HTIM]
+[EHTIM]
+
+[HTCT]
+0
+[EHTCT]
+
+[HTCTX]
+0
+[EHTCTX]
+
+[HTCL]
+16711680
+[EHTCL]
+
+[HTCLX]
+0
+[EHTCLX]
+
+[HTCV]
+8388736
+[EHTCV]
+
+[HTCVX]
+0
+[EHTCVX]
+
+[HTCA]
+255
+[EHTCA]
+
+[HTCAX]
+0
+[EHTCAX]
+
+[HTFP]
+HM
+[EHTFP]
+
+[HTHLP]
+0
+[EHTHLP]
+
+[HTHLPS]
+start_fr.htm
+[EHTHLPS]
+
+[HTHLPC]
+toc.htm
+[EHTHLPC]
+
+[HTHLPI]
+idx.htm
+[EHTHLPI]
+
+[HTHLPN]
+nav.htm
+[EHTHLPN]
+
+[WA]
+3
+[EWA]
+
+[WM]
+1
+[EWM]
+
+[WS]
+-1
+[EWS]
+
+[BR]
+Z:\FF95\IMAGES
+Z:\FF95\HELP
+[EBR]
+
+[AV]
+0 0 0 0
+[EAV]
+
+[HF]
+[EHF]
+
+[EOPT]
+
+[VH]
+4.00.017-F007;
+[EVH]
+
+[D3]
+0;0;Normal;0;0;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+1;0;Emphasized;0;-1;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+2;0;Topic Heading;0;0;0;0;0;MS Sans Serif;14;80;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+3;0;Paragraph Title;0;-1;0;0;0;MS Sans Serif;12;80;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+4;0;Bullet 1;0;0;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;19;-19;Symbol;183;0;10;0;50;;
+5;0;Hanging Indent 1;0;0;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;38;-38;;0;0;0;0;50;;
+[ED3]
+
+[BN]
+[EBN]
+
+[MD4]
+[EMD]
+
+[MI]
+[EMI]
+
+[WD4]
+main=""(100,100,823,823),27904,(255,255,255),(255,255,232),242,7,0,,1
+[EWD]
+
+[SK]
+000001002003004005000000000000000000000000000000000000000000
+[ESK]
+
+[HT]
+[PK]
+200908370001
+[EPK]
+[PT]
+Users Guide
+[EPT]
+[MC]
+M
+[EMC]
+
+[MT]
+[EMT]
+
+[N3]
+0198210000001LOGO1.BMP
+[EN3]
+
+[PG]
+001002
+[EPG]
+
+[BI]
+
+[EBI]
+[CN]
+ 2 
+[ECN]
+[CS]
+Users_Guide
+[ECS]
+[TX]
+{\fonttbl
+{\f0\fswiss\fcharset0 SYSTEM;}
+{\f1\fswiss\fcharset0 MS SANS SERIF;}
+}
+\paperw8175 \margr0\margl0 \plain \fs20 \ATXts720\qc\sl240 \f1 \ATXnt1 LOGO1.BMP\ATXnt0  \par
+\ATXpt2 \fs28 \cf4 Users Guide
+
+[ETX]
+[EHT]
+
+[FT]
+MS SANS SERIF,fswiss,0
+SYSTEM,fswiss,0
+[EFT]
+
+[EOF]
+5856,
+5829,
+6010,
+5992,
+6030,
+6365
+5894,
+5977,
+[NDX]
+[TLI]00006330
+[PKI]00006337
+[CSI]00006344
+[CNI]00006351
+[TXI]00006358
+[BTI]00006365
+[MTI]00006371
+[BEI]00003575
+[WDI]00005650
+[PSI]00005045
+[OPT]00003817
+[MAC]00005619
+[BII]00006378
+[BNI]00005610
+[ENDX]
+00006385
+

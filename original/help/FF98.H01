@@ -1,0 +1,601 @@
+üVQHLPEDFILE_4.00.017_007ü
+
+[PF]
+-1
+[EPF]
+[DICTIONARY]
+AF - Append Project FILES Section
+AL - Project ALIAS Section
+AM - Append Project MAP Section
+AN - Annotations
+BI - Browse info
+AV - Audio/Video Project Options
+BX - Build Expression Index
+BM - Bookmarks
+BM3 - New Bookmarks
+BN - Browse group names
+BR - Bitmap root
+BE - Build Expression
+BP - Build Tag Pointer Strings
+BT - Build Tags
+CH - Character set
+CI - Citation
+CM - Context map
+CN - Context number
+CNI - Context Number Index
+CP - Compress
+CR - Copyright
+CS - Context string
+CSI - Context String Index
+CV - Compiler version
+CW - Compiler Switch(s)
+DH - Defined help styles
+D2 - Defined help styles - ver 2.00
+D3 - Defined help styles - Ver 3.00
+FM - Font markers
+FT - Font table
+F2 - Font markers - ver 2.00
+HA - Help author
+HC - Help compiler dir
+HF - Help files
+HX - Help comments
+HT - Help topic section
+HTV - HTML options - HTML version
+HTM - HTML options - server version
+HTP - HTML options - export path
+HTI - HTML options - index filename
+HTH - HTML options - headers
+HTH2 - HTML options - headers, multiple style version
+HTW - HTML options - web browser
+HTO - HTML options - web browser options
+HTF - HTML options - font translations
+HTS - HTML options - default URL
+HTA - HTML options - alternate HTML
+HTD - HTML options - default HTML
+HTN - HTML options - nonscrolling region
+HTG - HTML options - image path on server
+HTK - HTML options - add keywords
+HTR - HTML options - footer text
+HTRX - HTML options - footer flag
+HTE - HTML options - header text
+HTEX - HTML options - header flag
+HTC - HTML options - background color
+HTCX - HTML options - background color flag
+HTIM - HTML options - background image
+HTH - HTML Form Header
+HTCT - HTML options - text color
+HCTX - HTML options - text color flag
+HTCL - HTML options - link color
+HTCLX - HTML options - link color flag
+HTCV - HTML options - visited link color
+HTCVX - HTML options - visited link color flag
+HTCA - HTML options - activated link color
+HTCAX - HTML options - activated link color flag
+HTHLP - HTML options - HTML Help flag
+HTHLPS - HTML options - HTML Help startup file
+HTHLPC - HTML options - HTML Help contents file
+HTHLPI - HTML options - HTML Help index file
+HTHLPN - HTML options - HTML Help navigator file
+HV - Help Magician Version
+IC - Icon FileName
+IN - Index
+JM - Jump markers
+J2 - Jump markers - ver 2.00
+J3 - Jump markers - ver 3.00
+KW - Keywords
+KW3 - Keywords
+KW4 - Keywords
+KWA - A Keywords
+LH - Last HTML Write
+LN - Language
+LT - Links Tags
+MD - Macro definitions
+MD4 - Macro definitions - ver 4.00
+MM - Multimedia markers
+MK - Multiple keywords
+MK4 - Multiple keywords
+MI - Macro info
+MT - Mid Topic Context Strings
+NS - WYSIWYG Nonscrolling Regions
+NT - NTags
+N2 - NTags - ver 2.00
+N3 - NTags - ver 3.00
+OK - Old key phrase
+OP - Optimize for  CDROM
+PF - Project Flag
+PG - Paragraph Tags
+PJ - Project macro
+PK - Primary Key
+PKI - Primary Key Index
+PM - Popup markers
+P2 - Popup markers - ver 2.00
+P3 - Popup markers - ver 3.00
+PR - Paragraph markers
+PT - Page title
+RC - RTF Compatibility
+SK - Style Hot Keys
+TI - Title
+TLI - Title Index
+TM - Topic macro
+TP - Template
+TX - Help Text
+UB - Use Build Expression
+UI - Unique File ID
+UR - URL Addresses
+WA - Warning
+WD - Window definitions
+WD3 - Window definitions
+WD4 - Window definitions
+WM - Write map file
+WP - Word Processor
+WS - Windows specification source
+VH - Version History
+[END OF DICTIONARY]
+
+[NS]
+-1
+[ENS]
+
+[BT]
+[EBT]
+
+[BE]
+
+
+
+
+
+
+
+
+
+
+[EBE]
+
+[UB]
+False
+[EUB]
+
+[BX]
+ 1
+[EBX]
+
+[HA]
+[EHA]
+
+[HX]
+[EHX]
+
+[AF]
+[EAF]
+
+[AM]
+[EAM]
+
+[BM3]
+0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;0;0;0;;
+[EBM3]
+
+[CV]
+4
+[ECV]
+
+[OPT]
+[CH]
+0
+[ECH]
+
+[CI]
+© STI - Daniel Doubrovkine - 1998 - All Rights Reserved
+[ECI]
+
+[CM]
+N:\WORKS\PROGRA~1\FF98\HELP\FF98.H
+[ECM]
+
+[CP]
+1
+[ECP]
+
+[CR]
+© STI - Daniel Doubrovkine - 1998 - All Rights Reserved
+[ECR]
+
+[HV]
+400017
+[EHV]
+
+[IC]
+FOLDER.ICO
+[EIC]
+
+[IN3]
+2
+[EIN3]
+
+[LH]
+0
+[ELH]
+
+[LN]
+0
+[ELN]
+
+[OK]
+0
+[EOK]
+
+[OP]
+0
+[EOP]
+
+[PJ]
+0
+[EPJ]
+
+[RC]
+6
+[ERC]
+
+[TI]
+File & Folder 98 Help
+[ETI]
+
+[UI]
+20090837
+[EUI]
+
+[HTV]
+0
+[EHTV]
+
+[HTM]
+0
+[EHTM]
+
+[HTP]
+T:\32BIT\PROG\HMPRO95\HTML
+[EHTP]
+
+[HTI]
+index.htm
+[EHTI]
+
+[HTH2]
+;;;;;;;;;;;;;;;;;
+[EHTH2]
+
+[HTW]
+[EHTW]
+
+[HTO]
+[EHTO]
+
+[HTF]
+0;8;10;12;14;20;26;36;
+[EHTF]
+
+[HTS]
+[EHTS]
+
+[HTA]
+[EHTA]
+
+[HTD]
+[EHTD]
+
+[HTN]
+-1
+[EHTN]
+
+[HTG]
+[EHTG]
+
+[HTK]
+0
+[EHTK]
+
+[HTR]
+[EHTR]
+
+[HTRX]
+0
+[EHTRX]
+
+[HTE]
+[EHTE]
+
+[HTEX]
+0
+[EHTEX]
+
+[HTCX]
+0
+[EHTCX]
+
+[HTC]
+12632256
+[EHTC]
+
+[HTIM]
+[EHTIM]
+
+[HTCT]
+0
+[EHTCT]
+
+[HTCTX]
+0
+[EHTCTX]
+
+[HTCL]
+16711680
+[EHTCL]
+
+[HTCLX]
+0
+[EHTCLX]
+
+[HTCV]
+8388736
+[EHTCV]
+
+[HTCVX]
+0
+[EHTCVX]
+
+[HTCA]
+255
+[EHTCA]
+
+[HTCAX]
+0
+[EHTCAX]
+
+[HTFP]
+HM
+[EHTFP]
+
+[HTHLP]
+0
+[EHTHLP]
+
+[HTHLPS]
+start_fr.htm
+[EHTHLPS]
+
+[HTHLPC]
+toc.htm
+[EHTHLPC]
+
+[HTHLPI]
+idx.htm
+[EHTHLPI]
+
+[HTHLPN]
+nav.htm
+[EHTHLPN]
+
+[WA]
+3
+[EWA]
+
+[WM]
+1
+[EWM]
+
+[WS]
+-1
+[EWS]
+
+[BR]
+Z:\FF98\IMAGES
+[EBR]
+
+[AV]
+0 0 0 0
+[EAV]
+
+[HF]
+[EHF]
+
+[EOPT]
+
+[VH]
+4.00.017-F007;
+[EVH]
+
+[D3]
+0;0;Normal;0;0;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+1;0;Emphasized;0;-1;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+2;0;Topic Heading;0;-1;0;0;0;MS Sans Serif;14;80;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+3;0;Paragraph Title;0;-1;0;0;0;MS Sans Serif;12;80;0;0;0;0;0;0;0;0;0;0;0;;0;0;0;8;50;;
+4;0;Bullet 1;0;0;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;19;-19;Symbol;183;0;10;0;50;;
+5;0;Hanging Indent 1;0;0;0;0;0;MS Sans Serif;10;0;0;0;0;0;0;0;0;0;0;38;-38;;0;0;0;0;50;;
+[ED3]
+
+[BN]
+[EBN]
+
+[MD4]
+[EMD]
+
+[MI]
+[EMI]
+
+[WD4]
+main="File & Folder 98 Help"(100,100,823,823),0,(255,255,255),(255,255,255),0,7,0,,1
+[EWD]
+
+[SK]
+000001002003004005000000000000000000000000000000000000000000
+[ESK]
+
+[HT]
+[PK]
+200908370001
+[EPK]
+[PT]
+Users Guide
+[EPT]
+[MC]
+M
+[EMC]
+
+[J3]
+01410002000000001
+[EJ3]
+
+[MT]
+[EMT]
+
+[N3]
+0180210000001MAN1.BMP
+[EN3]
+
+[PG]
+001002
+[EPG]
+
+[BI]
+
+[EBI]
+[CN]
+ 2 
+[ECN]
+[CS]
+Users_Guide
+[ECS]
+[TX]
+{\fonttbl
+{\f0\fswiss\fcharset0 SYSTEM;}
+{\f1\fswiss\fcharset0 MS SANS SERIF;}
+}
+\paperw16635 \margr0\margl0 \plain \fs20 \ATXts720\sl240 \f1  \par
+\qc  \ATXnt1 MAN1.BMP\ATXnt0  \par
+\ATXpt2 \fs28 \b \cf4 File & Folder 98 - Users Guide\par
+\par
+\ql\ATXpt0\li1440 \fs20 \b0 \ATXul1026 \cf2 \ATXht1 About S.T.I. File & Folder\par
+\li2160 \fs16 \ATXul0 \cf0 \ATXht0 Contact and legal information about the most intuitive document management software.\par
+\li0 \fs20 \par
+\li1440 What's New in File & Fol
+der 98'\par
+\li2160 \fs16 New features of File & Folder since the Windows 3.11 version. The evolution of the system and the advantages of the 98 version.\par
+\li0 \fs20 \par
+\li1440 File & Folder Document Management System\par
+\li2160 \fs16 Why File 
+& Folder? - a detailed description of the idea and the principes. The multi-volume virtual file system at ease.\par
+\li0 \fs20 \par
+\li1440 Navigating in File & Folder\par
+\li2160 \fs16 The visual elements of File & Folder, describing the document bro
+wsing and selection panel, the setup, the previews and the properties windows.\par
+\li0 \fs20 \par
+\li1440 Folder and Document Management Commands\par
+\li2160 \fs16 File & Folder commands in detail, users' guide to File & Folder.\par
+\li0 \fs20 
+\par
+\li1440 Advanced Features and System Setup\par
+\li2160 \fs16 File & Folder virtual volumes setup, buttons and controls setup, advanced features such as hidden commands.\par
+\li0 \fs20 \par
+ \par
+\qc \fs12 © STI - Daniel Doubrovkine - 1998 - All Righ
+ts Reserved
+
+[ETX]
+[EHT]
+
+[PK]
+200908370002
+[EPK]
+[PT]
+About STI File & Folder
+[EPT]
+[MC]
+M
+[EMC]
+
+[MT]
+[EMT]
+
+[N3]
+0198210000003LOGO1.BMP
+[EN3]
+
+[PG]
+001002
+[EPG]
+
+[BI]
+
+[EBI]
+[CN]
+ 4 
+[ECN]
+[CS]
+ff_about
+[ECS]
+[TX]
+{\fonttbl
+{\f0\fswiss\fcharset0 SYSTEM;}
+{\f1\fswiss\fcharset0 MS SANS SERIF;}
+}
+\paperw16635 \margr0\margl0 \plain \fs20 \ATXts720\qc\ATXpt2\sl240 \f1 \fs28 \b \cf4 \ATXnt3 LOGO1.BMP\ATXnt0  \par
+About S.T.I. File & Folder\par
+\ql\ATXpt0 \fs20 \b0 \cf0  \par
+File & Folder and File & Folder 98 are copyright Daniel Doubrovkine, Stolen Technologies Inc., Switzerland. \par
+\par
+This software is NOT free. Any person, company or organisation using File & Folder should buy it from the author himself or 
+from an authorized dealer. You may not modify, sell or abuse of this software without a total unforced consent of the author. Though File & Folder has been diligently tested, the author will still not be responsible for eventual errors caused directly or
+ indirectly by the software itself, any kind of misuse, bugs or any external influence by any kind of life or artificial intelligence form. The author of this software will not be held responsible for any kind of data, job or time loss, as well as person
+al dramas or collective chaos. All names of companies are registered trademarks of their respective owners. Any illegal sale or use of this software will be severely punished and any violation of this agreement will be prosecuted to the maximum extent po
+ssible under the Swiss criminal law.\par
+\par
+File & Folder 98 has been written in object pascal, using Borland © Delphi 3.0. Source code is in no way available for sale or distribution.\par
+\par
+For more information about Stolen Technologies Inc., s
+uggestions and proposals, please visit our web site at http://sti.infomaniak.ch or contact\par
+\par
+\qc \b STI - Daniel Doubrovkine\par
+\b0 25, rue Jean-Violette - 1205 Geneva, Switzerland\par
+mobile: + 41 (0) 79 637 63 68 - phone & fax: + 41 (0) 22 
+329 03 06\par
+e-mail: dblock@infomaniak.ch - ICQ#: 7084855\par
+web: http://sti.infomaniak.ch\par
+\ql \par
+\qc \fs12 © STI - Daniel Doubrovkine - 1998 - All Rights Reserved
+
+[ETX]
+[EHT]
+
+[FT]
+MS SANS SERIF,fswiss,0
+SYSTEM,fswiss,0
+[EFT]
+
+[EOF]
+6119,7934,
+6092,7907,
+6306,8100,
+6288,8082,
+6326,8117,
+10235
+6191,7984,
+6273,8067,
+[NDX]
+[TLI]00010175
+[PKI]00010187
+[CSI]00010199
+[CNI]00010211
+[TXI]00010223
+[BTI]00010235
+[MTI]00010242
+[BEI]00003575
+[WDI]00005898
+[PSI]00005292
+[OPT]00003818
+[MAC]00005867
+[BII]00010254
+[BNI]00005858
+[ENDX]
+00010266
+

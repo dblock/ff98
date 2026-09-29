@@ -1,0 +1,31 @@
+About S.T.I. File & Folder
+Any
+Commands
+Daniel
+Doubrovkine
+File
+Folder
+Guide
+Reserved
+Rights
+S.T.I.
+Stolen
+Technologies
+and
+author
+document
+features
+http://sti.infomaniak.ch
+information
+kind
+management
+responsible
+setup,
+software
+system
+the
+this
+version.
+virtual
+will
+© STI - Daniel Doubrovkine - 1998 - All Rights Reserved

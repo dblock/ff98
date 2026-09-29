@@ -1,0 +1,120 @@
+unit ffInit;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  ExtCtrls, StdCtrls, ComCtrls, d32about, Buttons;
+
+type
+  TInitForm = class(TForm)
+    LogoImage: TImage;
+    iTimer: TTimer;
+    iProgress: TProgressBar;
+    SysLabel: TLabel;
+    ffAboutClose: TBitBtn;
+    Label1: TLabel;
+    Label3: TLabel;
+    Label2: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure iTimerTimer(Sender: TObject);
+    procedure FormHide(Sender: TObject);
+    procedure ffAboutCloseClick(Sender: TObject);
+  private
+    procedure WMNCHitTest(var M: TWMNCHitTest); message WM_NCHitTest;
+    procedure WMwindowposchanging(var M: TWMwindowposchanging); message WM_WINDOWPOSCHANGING;
+    procedure HideTitleBar;
+  public
+    procedure Stat(iStr: string; iPos: integer);
+    procedure ShowAbout;
+  end;
+
+var
+  InitForm: TInitForm;
+
+implementation
+
+{$R *.lfm}
+
+procedure TInitForm.WMNCHitTest(var M: TWMNCHitTest);
+begin
+   inherited;
+   if M.Result = htClient then
+      M.Result := htCaption;
+   end;
+
+procedure TInitForm.WMwindowposchanging(var M: TWMwindowposchanging);
+begin
+   inherited;
+   with M.WindowPos^ do begin
+      if x<0 then x:=0;
+      if y<0 then y:=0;
+      if x+cx>Screen.Width then x:=Screen.Width-cx;
+      if y+cy>Screen.Height then y:=Screen.Height-cy;
+      end;
+  end;
+
+procedure TInitForm.Stat(iStr: string; iPos: integer);
+begin
+     iProgress.Position := iPos;
+     end;
+
+procedure TInitForm.FormCreate(Sender: TObject);
+begin
+     ClientWidth := LogoImage.Width;
+     HideTitleBar;
+     CreateVersionString;
+     SysLabel.Caption := VersionString + #13#10 + MemStatusString;
+     ClientHeight := LogoImage.Height + SysLabel.Height;     
+     end;
+
+Procedure TInitForm.HideTitlebar;
+Var
+   Save : LongInt;
+Begin
+   if BorderStyle=bsNone then Exit;
+   Save:=GetWindowLong(Handle,gwl_Style);
+   if (Save and ws_Caption)=ws_Caption then Begin
+      Case BorderStyle of
+         bsSingle,
+         bsSizeable : SetWindowLong(Handle,gwl_Style,Save and
+           (not(ws_Caption)) or ws_border);
+         bsDialog : SetWindowLong(Handle,gwl_Style,Save and
+           (not(ws_Caption)) or ds_modalframe or ws_dlgframe);
+         end;
+     Height:=Height-getSystemMetrics(sm_cyCaption);
+     Refresh;
+     end;
+   end;
+
+
+procedure TInitForm.iTimerTimer(Sender: TObject);
+begin
+     InitForm.Hide;
+     end;
+
+procedure TInitForm.FormHide(Sender: TObject);
+begin
+     iTimer.Enabled := False;
+     end;
+
+procedure TInitForm.ffAboutCloseClick(Sender: TObject);
+begin
+     Close;
+     end;
+
+procedure TInitForm.ShowAbout;
+begin
+     if Visible then Hide;
+     iProgress.Visible := False;
+     ffAboutClose.Visible := True;
+     ShowModal;
+     end;
+
+
+
+
+
+
+
+end.

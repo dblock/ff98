@@ -1,0 +1,61 @@
+object ffSel: TffSel
+  Left = 484
+  Top = 397
+  BorderIcons = []
+  BorderStyle = bsToolWindow
+  Caption = 'Please choose a folder ...'
+  ClientHeight = 347
+  ClientWidth = 293
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object OpPanel: TPanel
+    Left = 0
+    Top = 317
+    Width = 293
+    Height = 30
+    Align = alBottom
+    TabOrder = 0
+    OnResize = OpPanelResize
+    object FFSOk: TBitBtn
+      Left = 194
+      Top = 3
+      Width = 93
+      Height = 25
+      Caption = 'Ok'
+      Enabled = False
+      TabOrder = 0
+      Default = True
+      ModalResult = 1
+      Kind = bkOK
+    end
+    object FFSCancel: TBitBtn
+      Left = 100
+      Top = 3
+      Width = 93
+      Height = 25
+      TabOrder = 1
+      Cancel = True
+      ModalResult = 2
+      Kind = bkCancel
+    end
+  end
+  object FFSelDir: TFFDirListBox
+    Left = 0
+    Top = 0
+    Width = 293
+    Height = 317
+    ShowDocuments = False
+    OnChange = FFSelDirChange
+    Align = alClient
+    Columns = 2
+    ItemHeight = 17
+    TabOrder = 1
+  end
+end

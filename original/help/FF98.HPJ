@@ -1,0 +1,24 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+;Windows 95 Help Project File
+[OPTIONS]
+HCW=0
+COMPRESS=60 Hall Zeck
+ERRORLOG=N:\WORKS\PROGRA~1\FF98\HELP\FF98.ERR
+LCID=0x409 0x0 0x0 ;English (United States)
+REPORT=Yes
+CONTENTS=Users_Guide
+TITLE=File & Folder 98 Help
+COPYRIGHT=© Vestris Inc. - Daniel Doubrovkine - 1998 - All Rights Reserved
+CITATION=© Vestris Inc. - Daniel Doubrovkine - 1998 - All Rights Reserved
+BMROOT=..\IMAGES
+HLP=.\FF98.hlp
+
+[FILES]
+FF98.RTF
+
+[MAP]
+#include <FF98.H>
+
+[WINDOWS]
+main="FF98.HMP",(100,100,823,823),0,(r16777215),(r16777215)

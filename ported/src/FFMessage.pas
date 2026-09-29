@@ -1,0 +1,209 @@
+unit FFMessage;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  Buttons, StdCtrls, ExtCtrls;
+
+type
+  TFFMessageBox = class(TForm)
+    Panel1: TPanel;
+    ButtonPanel: TPanel;
+    MessagePanel: TPanel;
+    MessageLabel: TLabel;
+    MessageEdit: TEdit;
+    RPanel: TPanel;
+    FFLogo: TSpeedButton;
+    procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    procedure RemoveControls;
+    procedure WMNCHitTest(var M: TWMNCHitTest); message WM_NCHitTest;
+    procedure WMwindowposchanging(var M: TWMwindowposchanging); message WM_WINDOWPOSCHANGING;
+    //procedure HideTitleBar;
+  public
+    function MessageDlg(const Msg: string; AType: TMsgDlgType; AButtons: TMsgDlgButtons;   HelpCtx: Longint): Word;
+    function InputBox(const ACaption, APrompt, ADefault: string): string;
+    function CreateButton(FKind: TBitBtnKind): TBitBtn;
+    function InputQuery(const ACaption, APrompt: string; var Value: string): Boolean;
+    function InputQueryExt(const ACaption, APrompt: string; var Value: string; Buttons: TMsgDlgButtons; Custom: string): integer;
+  end;
+
+var
+  FFMessageBox: TFFMessageBox;
+
+implementation
+
+uses ffInit;
+
+{$R *.lfm}
+
+function TFFMessageBox.InputQuery(const ACaption, APrompt: string; var Value: string): Boolean;
+begin
+     MessageLabel.Visible :=True;
+     MessageEdit.Visible := True;
+     RemoveControls;
+     CreateButton(bkOk);
+     CreateButton(bkCancel);
+     Caption := ACaption;
+     MessageLabel.Caption := APrompt;
+     MessageEdit.Text := Value;
+     if ShowModal = mrOk then begin
+        Value := MessageEdit.Text;
+        Result := True;
+        end else begin
+        Result := False;
+        end;
+     end;
+
+function TFFMessageBox.InputQueryExt(const ACaption, APrompt: string; var Value: string; Buttons: TMsgDlgButtons; Custom: string): integer;
+var
+   iPos, iRes: integer;
+begin
+     MessageLabel.Visible :=True;
+     MessageEdit.Visible := True;
+     RemoveControls;
+     if mbYes in Buttons then CreateButton(bkYes);
+     if mbNo in Buttons then CreateButton(bkNo);
+     if mbOK in Buttons then CreateButton(bkOk);
+     if mbCancel in Buttons then CreateButton(bkCancel);
+     if mbAbort in Buttons then CreateButton(bkAbort);
+     if mbRetry in Buttons then CreateButton(bkRetry);
+     if mbIgnore in Buttons then CreateButton(bkIgnore);
+     if mbAll in Buttons then CreateButton(bkAll);
+     if mbHelp in Buttons then CreateButton(bkHelp);
+     if Length(Custom) > 0 then begin
+        iPos := Pos(',', Custom);
+        iRes := 100;
+        while Length(Custom) > 0 do begin
+           if iPos = 0 then iPos := Length(Custom)+1;
+           with CreateButton(bkCustom) do begin
+              kind := bkOk;
+              Caption := Copy(Custom, 1, iPos-1);
+              Delete(Custom, 1, iPos);
+              ModalResult := iRes;
+              inc(iRes);
+              end;
+           iPos := Pos(',', Custom);
+           end;
+        end;
+     Caption := ACaption;
+     MessageLabel.Caption := APrompt;
+     MessageEdit.Text := Value;
+     Result := ShowModal;
+     end;
+
+
+function TFFMessageBox.InputBox(const ACaption, APrompt, ADefault: string): string;
+begin
+     MessageLabel.Visible :=True;
+     MessageEdit.Visible := True;
+     RemoveControls;
+     CreateButton(bkOk);
+     CreateButton(bkCancel);
+     Caption := ACaption;
+     MessageLabel.Caption := APrompt;
+     MessageEdit.Text := ADefault;
+     if ShowModal = mrOk then Result := MessageEdit.Text else Result := '';
+     end;
+
+function TFFMessageBox.CreateButton(FKind: TBitBtnKind): TBitBtn;
+begin
+     Result := TBitBtn.Create(ButtonPanel);
+     ButtonPanel.InsertControl(Result);
+     with Result do begin
+          Kind := FKind;
+          Left := MessageEdit.Left + (Width+2) * (ButtonPanel.ControlCount-1);
+          Top := (ButtonPanel.ClientHeight - Height) div 2;
+          end;
+     end;
+
+procedure TFFMessageBox.RemoveControls;
+var
+   i: integer;
+begin
+     for i:=ButtonPanel.ControlCount - 1 downto 0  do begin
+         ButtonPanel.Controls[i].Free;
+         end;
+     end;
+
+function TFFMessageBox.MessageDlg(const Msg: string; AType: TMsgDlgType; AButtons: TMsgDlgButtons; HelpCtx: Longint): Word;
+begin
+     MessageLabel.Visible :=True;
+     MessageEdit.Visible := False;
+     RemoveControls;
+
+     case AType of
+          mtWarning: Caption := 'Warning!';
+          mtError: Caption := 'Error!';
+          mtInformation: Caption := 'Information ...';
+          mtConfirmation: Caption := 'Please Confirm ...';
+          mtCustom: Caption := 'Message Box';
+          end;
+
+     if mbYes in AButtons then CreateButton(bkYes);
+     if mbOk in AButtons then CreateButton(bkOk);
+     if mbNo in AButtons then CreateButton(bkNo);
+     if mbCancel in AButtons then CreateButton(bkCancel);
+     if mbIgnore in AButtons then CreateButton(bkIgnore);
+     if mbAbort in AButtons then CreateButton(bkAbort);
+     if mbRetry in AButtons then CreateButton(bkRetry);
+     if mbAll in AButtons then CreateButton(bkAll);
+
+     MessageLabel.Caption := Msg;
+     Result := ShowModal;
+     end;
+
+procedure TFFMessageBox.FormShow(Sender: TObject);
+begin
+     if MessageEdit.Visible then MessageEdit.SetFocus;
+     end;
+
+procedure TFFMessageBox.WMNCHitTest(var M: TWMNCHitTest);
+begin
+   inherited;
+   if M.Result = htClient then
+      M.Result := htCaption;
+   end;
+
+procedure TFFMessageBox.WMwindowposchanging(var M: TWMwindowposchanging);
+begin
+   inherited;
+   with M.WindowPos^ do begin
+      if x<0 then x:=0;
+      if y<0 then y:=0;
+      if x+cx>Screen.Width then x:=Screen.Width-cx;
+      if y+cy>Screen.Height then y:=Screen.Height-cy;
+      end;
+  end;
+
+{procedure TFFMessageBox.HideTitlebar;
+Var
+   Save : LongInt;
+Begin
+   if BorderStyle=bsNone then Exit;
+   Save:=GetWindowLong(Handle,gwl_Style);
+   if (Save and ws_Caption)=ws_Caption then Begin
+      Case BorderStyle of
+         bsSingle,
+         bsSizeable : SetWindowLong(Handle,gwl_Style,Save and
+           (not(ws_Caption)) or ws_border);
+         bsDialog : SetWindowLong(Handle,gwl_Style,Save and
+           (not(ws_Caption)) or ds_modalframe or ws_dlgframe);
+         end;
+     Height:=Height-getSystemMetrics(sm_cyCaption);
+     Refresh;
+     end;
+   end;}
+
+
+
+procedure TFFMessageBox.FormCreate(Sender: TObject);
+begin
+     //HideTitleBar;
+     end;
+
+
+
+end.
